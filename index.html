@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Rest API</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script src="js/main.js"></script>
+		
+	</head>
+
+	<body>
+	<form action="" method="post" >
+		<h1 style="text-align:center;"> Rest API</h2>
+		<div style="width:40%; float:left; margin-left:5%;">
+		<fieldset >
+		<legend>Create an Entry</legend>
+		<label>Enter Text:</label>
+		<input type="text" id="txtValue" name="txtValue"  />
+		
+		<button id="submit" value="submit" name="submit" onClick='send(); return false;'>Submit </button>
+		</fieldset>
+		</div>
+		
+	</form>
+	
+	<form action="" method="put" >
+	<div style="width:40%; float:left; margin-left:10%; margin-bottom:2%;">
+		<fieldset>
+		<legend>Update an Entry</legend>
+		<label>Enter old Text:</label>
+		<input type="text" id="txtUpdate" name="txtupdate"  />
+		<label>Enter new Text:</label>
+		<input type="text" id="txtnew" name="txtnew"  />
+		
+		<button id="submit" value="submit" name="submit" onClick='Update(); return false;'>Update </button>
+		</fieldset>
+	</div>
+		<br /><br />
+	</form>
+	<br />
+	<br />
+	<form action="" method="delete" >
+	<div style="clear:both; width:60%; margin-left:20%; text-align:center;">
+		<fieldset>
+		<legend>Delete an Entry</legend>
+			<label>Enter text:</label>
+			<input type="text" id="txtID" name="txtID"  />
+			
+			<button id="submit" value="submit" name="submit" onClick='Delete(); return false;'>Delete </button>
+			
+			<br />
+			</fieldset>
+	</div>
+	</body>
+<h1 style="text-align:center;"> Results: </h1>
+<div style="text-align:center;">
+	<form action="" method="get" >
+		<button id="submit" value="submit" name="submit" onClick='Retrieve(); return false;'>Retrieve All</button>
+	</form>
+	<br />
+	<br />
+	<textarea id="retAll" cols="65" rows="30" ></textarea>
+	</body>
+	</div>
+</html>
